@@ -41,32 +41,32 @@
         "analyse": "phpstan analyse --ansi --memory-limit=-1 --debug",
         "check": "pint --test -v",
         "debug": [
-            "@validate",
+            "@verify",
             "@check",
             "@analyse",
             "@inspect",
             "@review",
             "@test"
         ],
-        "devtools:init": [
+        "init:tools": [
             "psalm --init",
             "rector init",
             "pest --init"
         ],
         "fix": [
             "@refactor",
-            "@sanitize",
+            "@improve",
             "@format",
             "@lint"
         ],
         "format": "psalter --issues=all",
+        "improve": "phpinsights fix",
         "inspect": "psalm --no-diff",
         "lint": "pint -v",
         "test": "pest --colors=always",
         "review": "rector --dry-run --debug",
         "refactor": "rector",
-        "sanitize": "phpinsights fix",
-        "validate": "phpinsights analyse"
+        "verify": "phpinsights analyse"
     },
     "extra": {
         "branch-alias": {
