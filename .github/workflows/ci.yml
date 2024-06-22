@@ -48,8 +48,9 @@ jobs:
       - name: ✅ Check code lint
         run: composer lint
 
-      - name: ⚗️ Run static analysis
+      - name: ⚗️  Run static analysis
         run: |
+          composer verify
           composer analyse
           composer inspect
 
