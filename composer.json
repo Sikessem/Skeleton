@@ -1,5 +1,6 @@
 {
     "name": "sikessem/skeleton",
+    "type": "project",
     "description": "📦️ Sikessem library builder template.",
     "homepage": "https://sikessem.github.io/packages/skeleton",
     "license": "MIT",
